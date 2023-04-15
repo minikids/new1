@@ -30,16 +30,8 @@ function speak(){
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
     Webcam.attach(camera);
-}
-Webcam.set({
-    width:360,
-    height:250,
-    image_format:'png',
-    png_quality:90
-    });
-    camera = document.getElementById("camera");
-
-   
+    
+       
 setTimeout(function(){
     img_id = "selfie1";
 
@@ -49,6 +41,16 @@ setTimeout(function(){
     var utterThis = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utterThis);
 }, 5000);
+}
+Webcam.set({
+    width:360,
+    height:250,
+    image_format:'png',
+    png_quality:90
+    });
+    camera = document.getElementById("camera");
+
+
 
 
 function take_snapshot(){
